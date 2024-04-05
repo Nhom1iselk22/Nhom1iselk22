@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mybikemylife</title>
+	<link rel="stylesheet" href="css/mybikemylife.css">
+</head>
+
+<body>
+	<div class="nav">
+		<div class="title"><h1 class="title">MY BIKE MY LIFE</h1></div>
+		<div class="tabs">
+		  <div class="home">
+			<ul class="home"><li class="home"><a href="mybikemylife.html">Home</a></li></ul>
+		  </div>
+		  <div class="contacts">
+			  <ul class="contacts">
+				<li class="contacts" style="padding: 14px;">About me</li>
+				<li class="contacts"><a href="https://www.facebook.com/profile.php?id=100041569212472&mibextid=LQQJ4d">facebook</a></li>
+				<li class="contacts"><a href="https://www.instagram.com/ducdo42195/">instagram</a></li>
+			 	<li class="contacts"><a href="https://soundcloud.com/jason42195">soundcloud</a></li>
+			  </ul>
+		  </div>
+		</div>
+	  </div>
+	<div class="b" style="margin-top:200px">
+		<img align="left" src="harley/harley.jpg" alt="harley-davidson-breakout" usemap="#harley"><br>
+
+		<map name="harley">
+      <area shape="rectangle" coords="0,0,400,272" alt="harley" href="harley/harley.html">
+	  </map>
+		<h2><a class="b" href="harley/harley.html">BREAKOUT<sup>TM</sup>114 - HARLEY-DAVIDSON </a></h2>
+		<p style="margin-bottom: 130px;">Harley Davidson Breakout 114 là một trong 8 mẫu xe thuộc dòng Softail 2018<br>
+			được giới thiệu tới người tiêu dùng Việt. Breakout 114 là mẫu xe có thiết<br>
+			kế thời trang, phù hợp với những người dùng trẻ tuổi.</p>
+	</div>
+	<div class="b">
+		<img align="left" src="kawasaki/kawasaki.jpg" alt="kawasaki-ninja-h2r" usemap="#kawasaki">
+		<map name="kawasaki">
+      <area shape="rectangle" coords="0,0,400,253" alt="kawasaki" href="kawasaki/kawasaki.html">
+	  </map>
+		<h2><a class="b" href="kawasaki/kawasaki.html">Ninja
+			H2R -
+			KAWASAKI</a></h2>
+		<p>GIÁ BÁN LẺ ĐỀ XUẤT: 1.830.000.000₫ </p>
+		<p>IMU CỦA BOSCH<br>VỚI PHẦN MỀM ĐIỀU KHIỂN TIÊN TIẾN </p>
+		<p style="margin-bottom: 70px;">ĐỘNG CƠ SIÊU NẠP 998 CM³,<br>4 XI-LANH THẲNG HÀNG</p>	
+	</div>
+	<div class="b">
+		<img align="left" src="suzuki/suzuki.jpg" alt="suzuki-gz-150a" usemap="#suzuki">
+		<map name="suzuki">
+      <area shape="rectangle" coords="0,0,400,272" alt="suzuki" href="suzuki/suzuki.html">
+    </map>
+		<h2><a class="b" href="suzuki/suzuki.html">GZ 150A - SUZUKI</a></h2>
+		<p>PHONG CÁCH CRUISER THUẦN KHIẾT</p>
+		<p style="margin-bottom: 85px;">Nghênh mặt trước gió, hiên ngang trước một không gian hoang dã.	Bước lên xe, bạn sẽ cảm nhận <br>
+			rõ ràng phía trước, đường chân trời không còn xa xôi nữa GZ-150A kế thừa thiết kế sành điệu,<br>
+			 mang đậm phong cách Cruiser, kế thừa những truyền thuyết.
+		</p><br>
+	</div>
+	<div class="b">
+		<img align="left" src="honda/honda.jpg" alt="honda-rebel-500" usemap="#honda"><br>
+		<map name="honda">
+      <area shape="rectangle" coords="0,0,400,272" alt="harley" href="honda/honda.html">
+	  </map>
+		<h2><a class="b" href="honda/honda.html">REBEL 500 - HONDA</a></h2>
+		<p style="margin-bottom: 90px;">Tự do tạo dấu ấn của riêng mình Mẫu xe Rebel 500 với khối động cơ 2 xy lanh song song mạnh mẽ,<br>
+			đặt gọn trong bộ khung xe với trọng tâm thấp, phong cách thiết kế tối giản đã đưa chiếc xe trở<br>
+			nên hấp dẫn trong mắt người lái - là một cỗ máy thuần túy để người dùng thỏa sức sáng tạo thể <br>
+			hiện chất riêng của mình - đem đến một phong cách sống TỰ DO, điều mà mẫu Rebel 500 luôn mong <br>
+			muốn mang lại cho người lái.</p>
+	</div>
+	<hr>
+	<button class="open-button" onclick="openForm()">Liên hệ tư vấn</button>
+	<div class="form-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+			<h2>Thông tin của bạn</h2>
+	
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Nhập email" name="email" required>
+	
+			<label for="tel"><b>Số điện thoại</b></label>
+			<input type="tel" placeholder="Nhập số điện thoại" name="num" required>
+			<label for="address"><b>Địa chỉ</b></label>
+			<select id="city" name="city">
+				<option value="Hà Nội">Hà Nội</option>
+				<option value="Hồ Chí Minh">Hồ Chí Minh</option>
+				<option value="Đà Nẵng">Đà Nẵng</option>
+			</select>
+			<button type="submit" class="btn">Gửi</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+		</form>
+	</div>
+	<script>
+		function openForm() {document.getElementById("myForm").style.display = "block";}
+		function closeForm() {document.getElementById("myForm").style.display = "none";}
+	</script>
+</body>
+
+</html>

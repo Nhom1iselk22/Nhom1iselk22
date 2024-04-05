@@ -1,0 +1,145 @@
+body {
+  margin:0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+.nav{
+  top:0;
+  margin-top: 0px;
+  background-color: #111;
+  position: fixed;
+  height: 180px;
+  width: 100%;
+}
+.nav .title h1{
+  margin-top: 25px;
+  color: white;
+  font-size:80px ;
+  font-weight: bold;
+  font-style: italic;
+}
+.nav .tabs .home ul{
+  font-weight: bold;
+  top: 140px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#111;
+  position: fixed;
+  width: 100%;
+}
+.nav .tabs .home li a{
+  top:100px;
+  display: block;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav .tabs .contacts ul {
+  font-weight: bold;
+  right: -790px;
+  top: 140px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#111;
+  position: fixed;
+  width: 100%;
+}
+.nav .tabs li{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+}
+.nav .tabs li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav .tabs li a:hover:not(.active) {
+  background-color: black;
+}
+div.b{
+  box-shadow: 5px 5px 20px #696969 ; 
+  padding: 5px;
+  margin: 10px;
+  border: 1px ;
+  border-radius: 5px; 
+}
+a.b{  
+  display: flex;
+  color: black;
+  font-size: 25px;
+}
+p{
+font-size: 15px;
+}
+img{
+ border-radius: 5px;
+ width: 400px;
+ margin: 5px;
+ }
+.open-button {
+  font-weight: bold;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  font-weight: bold;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=tel] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
